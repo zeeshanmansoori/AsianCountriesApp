@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp"
+        tools:context=".presentation.details.DetailFragment">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/country_flag"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="@color/purple_200" />
+
+
+        <TextView
+            android:id="@+id/common_name_holder"
+            style="@style/CountryAttributeHeadingStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/common_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/country_flag" />
+
+        <TextView
+            android:id="@+id/common_name"
+            style="@style/CountryAttributeValueStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/common_name_holder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/common_name_holder"
+            app:layout_constraintTop_toTopOf="@id/common_name_holder" />
+
+
+        <TextView
+            android:id="@+id/official_name_holder"
+            style="@style/CountryAttributeHeadingStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/official_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/common_name_holder" />
+
+        <TextView
+            android:id="@+id/official_name"
+            style="@style/CountryAttributeValueStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/official_name_holder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/official_name_holder"
+            app:layout_constraintTop_toTopOf="@id/official_name_holder" />
+
+
+        <TextView
+            android:id="@+id/capital_holder"
+            style="@style/CountryAttributeHeadingStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/capital"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/official_name_holder" />
+
+        <TextView
+            android:id="@+id/capital"
+            style="@style/CountryAttributeValueStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/capital_holder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/capital_holder"
+            app:layout_constraintTop_toTopOf="@id/capital_holder" />
+
+
+        <TextView
+            android:id="@+id/region_holder"
+            style="@style/CountryAttributeHeadingStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/region"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/capital_holder" />
+
+        <TextView
+            android:id="@+id/region"
+            style="@style/CountryAttributeValueStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/region_holder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/region_holder"
+            app:layout_constraintTop_toTopOf="@id/region_holder" />
+
+
+        <TextView
+            android:id="@+id/sub_region_holder"
+            style="@style/CountryAttributeHeadingStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subregion"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/region_holder" />
+
+        <TextView
+            android:id="@+id/sub_region"
+            style="@style/CountryAttributeValueStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/sub_region_holder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/sub_region_holder"
+            app:layout_constraintTop_toTopOf="@id/sub_region_holder" />
+
+
+        <TextView
+            android:id="@+id/border_holder"
+            style="@style/CountryAttributeHeadingStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/border"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sub_region_holder" />
+
+        <TextView
+            android:id="@+id/border"
+            style="@style/CountryAttributeValueStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/border_holder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/border_holder"
+            app:layout_constraintTop_toTopOf="@id/border_holder" />
+
+
+        <TextView
+            android:id="@+id/language_holder"
+            style="@style/CountryAttributeHeadingStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/languages"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/border_holder" />
+
+        <TextView
+            android:id="@+id/language"
+            style="@style/CountryAttributeValueStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/language_holder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/language_holder"
+            app:layout_constraintTop_toTopOf="@id/language_holder" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

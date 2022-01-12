@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AsianCountriesApp</string>
+    <string name="common_name">Common Name</string>
+    <string name="official_name">Official Name</string>
+    <string name="capital">Capital</string>
+    <string name="region">Region</string>
+    <string name="subregion">Subregion</string>
+    <string name="border">Border</string>
+    <string name="languages">Languages</string>
+    <string name="clear">Clear</string>
+</resources>
