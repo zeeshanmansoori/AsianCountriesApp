@@ -28,6 +28,6 @@ link : https://github.com/zeeshanmansoori/AsianCountriesApp/blob/master/assets/a
 | <img src="assets/home.jpg" width="200"/> | <img src="assets/details.jpg" width="200"/> | <img src="assets/delete.jpg" width="200"/> |
 
 ## Demo
-| <img src="assets/demo[1].gif" width="200"/> |
+| <img src="assets/demo.gif" width="200"/> |
 |---------|
 
